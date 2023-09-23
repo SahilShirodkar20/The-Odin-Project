@@ -1,0 +1,16 @@
+p{
+    background-color: pink;
+    font-family: "Verdana", "DejaVu Sans", sans-serif; 
+}
+.no3{
+    font-size: 24px;
+}
+#num2{
+    color:blue;
+    font-size: 36px;
+}
+#num4{
+    font-size: 24px;
+    background-color: lightgreen;
+    font-weight: bold;
+}
