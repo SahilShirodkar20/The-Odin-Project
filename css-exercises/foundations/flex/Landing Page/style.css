@@ -61,6 +61,80 @@ button{
 }
 .midtext{
     text-align: center;
-    font-size:48px ;
+    font-size: 36px;
+    margin: 15px;
     font-weight: bold;
+}
+.middle-down{
+    display:flex;
+    justify-content: center;
+}
+.boox{
+    width:150px;
+    height:150px;
+    border:5px solid #3883f6;
+    border-radius: 10px;
+}
+.belowtext{
+    text-align: center;
+}
+.compartment{
+    width:150px;
+    margin :50px;
+    
+}
+.quote-box
+{
+    background-color: #e5e7eb;
+    padding: 100px 200px;
+
+}
+.quote{
+    text-align: center;
+    color:#1f2937;
+    font-style: italic;
+    font-size: 36px;
+}
+.author{
+    text-align: right;
+    font-weight: bold;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:100px;
+}
+.signup
+{
+    display: flex;
+    background-color: #3883f6;
+    padding: 20px 50px;
+    border-radius: 5px;
+    gap:10px;
+}
+.ltop{
+    font-size: 32 px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+.ldown{
+    color: #f9faf8;
+}
+.but{
+    border-color: #f9faf8;
+    border-style: solid;
+    font-weight: bold;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1f2937;
+    color: #f9faf8;
+    height: 75px;
+}
+.logo{
+    font-weight: bold;
+    font-size: 32px;
 }
