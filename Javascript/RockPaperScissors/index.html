@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let scomp=0;
+        let splayer=0;
+        function getComputerChoice(){
+            let comp= Math.floor(Math.random() * (3 -1 + 1)) + 1;
+            if(comp==1)
+            {
+                return "rock";
+            }
+            if(comp==2)
+            {
+                return "paper";
+            }
+            if(comp==3)
+            {
+                return "scissors";
+            }
+        }
+        function playRound(playerSelection, computerSelection) {
+            if(playerSelection=="rock" && computerSelection=="scissors")
+            {
+                console.log("Player WINS");
+                splayer++;
+            }
+            if(playerSelection=="rock" && computerSelection=="paper")
+            {
+                console.log("Computer WINS");
+                scomp++;
+            }
+            if(playerSelection=="paper" && computerSelection=="rock")
+            {
+                console.log("Player WINS");
+                splayer++;
+            }
+            if(playerSelection=="paper" && computerSelection=="scissors")
+            {
+                console.log("Computer WINS");
+                scomp++;
+            }
+            if(playerSelection=="scissors" && computerSelection=="rock")
+            {
+                console.log("Computer WINS");
+                scomp++;
+            }
+            if(playerSelection=="scissors" && computerSelection=="paper")
+            {
+                console.log("Player WINS");
+                splayer++;
+            }
+            if(playerSelection==computerSelection)
+            {
+                console.log("ITS a DRAW");
+            }
+        }
+        for(let i=0;i<5;i++)
+        {
+            let playerSelection = prompt("Enter your choice: ");
+            let computerSelection = getComputerChoice();
+            console.log(playRound(playerSelection, computerSelection));
+        }
+        if(scomp>splayer)
+        {
+            console.log("CONGRATULATIONS COMPUTER !!");
+        }
+        else if(scomp<splayer)
+        {
+            console.log("CONGRATULATIONS PLAYER !!");
+        }
+        else{
+            console.log("DRAW DRAW DRAW");
+        }
+
+    </script>
+</body>
+</html>
