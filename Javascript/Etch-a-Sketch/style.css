@@ -1,0 +1,27 @@
+.bigcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    padding: 0;
+    margin: 0 auto; /* Center the container */
+    width: 512px;
+    height: 512px;
+}
+
+.inside {
+    border: 0.1px solid black;
+    box-sizing: border-box;
+    background-color: white; /* Initial background color */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
